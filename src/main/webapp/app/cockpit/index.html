@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible"
           content="IE=edge" />
 
-    <title>Camunda Cockpit Customized</title>
+    <title>Camunda Cockpit</title>
 
     <meta charset="utf-8" />
     <meta name="viewport"
@@ -17,6 +17,7 @@
 
     <!-- settings the base path for relative links -->
     <base href="$BASE"
+          admin-api="$APP_ROOT/api/admin/"
           cockpit-api="$APP_ROOT/api/cockpit/"
           engine-api="$APP_ROOT/api/engine/"
           app-root="$APP_ROOT" />
@@ -60,24 +61,26 @@
          user-name="userFullName"
          current-app="cockpit"
          ng-cloak
+         sign-out="{{ 'SIGN_OUT_ACTION' | translate }}"
+         my-profile="{{ 'MY_PROFILE' | translate }}"
          brand-name="Camunda Cockpit">
       <ul cam-if-logged-in
           ng-controller="camHeaderViewsCtrl">
         <li ng-repeat="actionProvider in menuActions"
             ng-if="actionProvider.pagePath && actionProvider.accessible"
             ng-class="activeClass(actionProvider)">
-          <a ng-href="{{ actionProvider.pagePath }}">{{ actionProvider.label }}</a>
+          <a ng-href="{{ actionProvider.pagePath }}">{{ actionProvider.label | translate}}</a>
         </li>
 
         <li class="dropdown"
             ng-if="dropdownActions.length">
           <a class="dropdown-toggle"
-             href>More <i class="caret"></i></a>
+             href>{{ 'COCKPIT_MORE' | translate}} <i class="caret"></i></a>
           <ul class="dropdown-menu">
             <li ng-repeat="actionProvider in dropdownActions"
                 ng-if="actionProvider.pagePath && actionProvider.accessible"
                 ng-class="activeClass(actionProvider)">
-              <a ng-href="{{ actionProvider.pagePath }}">{{ actionProvider.label }}</a>
+              <a ng-href="{{ actionProvider.pagePath }}">{{ actionProvider.label | translate}}</a>
             </li>
           </ul>
         </li>
@@ -104,7 +107,7 @@
             .app-splash > div { display: table-cell; vertical-align: middle; text-align: center; }
           </style>
           <div class="app-splash"><div>
-            <img src="$APP_ROOT/app/cockpit/assets/images/camunda-animated-logo-140.gif" />
+            <img src="$APP_ROOT/app/cockpit/assets/images/animated-logo-grey-48.gif" />
           </div></div><!-- / .app-splash -->
         </div>
       </div>
@@ -115,6 +118,8 @@
             version="v${project.version}"></footer>
 
     <script type="application/javascript">
+      var cockpitConf = window.camCockpitConf = {};
+
       window.PLUGIN_DEPENDENCIES = $PLUGIN_DEPENDENCIES || [];
       window.PLUGIN_PACKAGES = $PLUGIN_PACKAGES || [];
 
@@ -124,6 +129,11 @@
     </script>
 
     <script type="text/javascript" src="$APP_ROOT/app/cockpit/scripts/config.js"></script>
+
+    <!--[if lte IE 9]><script type="text/javascript">
+      cockpitConf.polyfills = cockpitConf.polyfills || [];
+      cockpitConf.polyfills.push('placeholder');
+    </script><![endif]-->
 
     <script type="application/javascript"
             src="$APP_ROOT/lib/require.js"></script>
@@ -142,14 +152,5 @@ requirejs(['$APP_ROOT/lib/deps.js'], function () {
   requirejs(['$APP_ROOT/app/cockpit/camunda-cockpit-bootstrap.js'], function(){});
 });
     </script>
-
-    <!--[if lte IE 9]>
-    <script type="text/javascript"
-            src="$APP_ROOT/app/cockpit/scripts/placeholders.utils.js"></script>
-    <script type="text/javascript"
-            src="$APP_ROOT/app/cockpit/scripts/placeholders.main.js"></script>
-    <script type="text/javascript"
-            src="$APP_ROOT/app/cockpit/scripts/placeholders.jquery.js"></script>
-    <![endif]-->
   </body>
 </html>
