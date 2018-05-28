@@ -2,15 +2,15 @@
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
   <display-name>camunda bpm webapp</display-name>
 
+  <!-- custom context listener -->
+  <listener>
+    <listener-class>org.camunda.bpm.cockpit.plugin.centaur.resources.CustomServletContextListener</listener-class>
+  </listener>
+
   <!-- cockpit bootstrap listener -->
   <listener>
     <listener-class>org.camunda.bpm.cockpit.impl.web.bootstrap.CockpitContainerBootstrap</listener-class>
   </listener>
-
-    <!-- tasklist bootstrap listener -->
-    <listener>
-        <listener-class>org.camunda.bpm.cockpit.plugin.centaur.resources.CustomServletContextListener</listener-class>
-    </listener>
 
   <!-- admin bootstrap listener -->
   <listener>
