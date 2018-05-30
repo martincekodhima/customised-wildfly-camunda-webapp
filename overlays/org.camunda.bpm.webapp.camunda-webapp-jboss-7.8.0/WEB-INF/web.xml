@@ -102,16 +102,6 @@
     <url-pattern>/api/cockpit/*</url-pattern>
   </servlet-mapping>
 
-    <!-- cockpit rest api -->
-    <servlet>
-        <servlet-name>Cockpit Websocket Api</servlet-name>
-        <servlet-class>org.camunda.bpm.cockpit.plugin.centaur.resources.WebSocketServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Cockpit Websocket Api</servlet-name>
-        <url-pattern>/api/websocket/cockpit/*</url-pattern>
-    </servlet-mapping>
-
   <!-- admin rest api -->
   <servlet>
     <servlet-name>Admin Api</servlet-name>
