@@ -24,30 +24,6 @@
 			<type>war</type>
 		</dependency>
 
-		<!-- you can add dependencies to own plugins (tasklist/cockpit) here, they 
-			will be included in the build:-->
-		<!--
-		<dependency>
-			<groupId>com.camunda.demo.plugin.tasklist</groupId>
-			<artifactId>tasklist-plugin-nice-external-forms</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.camunda.demo.plugin.tasklist</groupId>
-			<artifactId>tasklist-plugin-easy-search</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.camunda.demo.plugin.tasklist</groupId>
-			<artifactId>tasklist-plugin-delegation</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>org.camunda.bpm.cockpit.plugin</groupId>
-			<artifactId>centaur</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		-->
 		<dependency>
 			<groupId>org.camunda.bpm.cockpit.plugin</groupId>
 			<artifactId>centaur</artifactId>
