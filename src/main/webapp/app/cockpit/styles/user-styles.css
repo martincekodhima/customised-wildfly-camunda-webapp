@@ -12,7 +12,7 @@ a:hover, a:focus {
 	color: #2e2e2e;
 }
 [cam-widget-header] .navbar-brand {
-	background: url(../images/custom-logo.png);
+	background: url(../images/horse-logo.png);
     background-size: 100px;
     background-repeat: no-repeat;
     margin-left: 10px;
@@ -51,4 +51,9 @@ span.brand-name.ng-binding {
 
 [cam-widget-footer] {
 	background-color: #7FE6E9;
+	background: url(../images/tue-logo.svg);
+	background-size: 100px;
+	background-repeat: no-repeat;
+	background-position-x: 10px;
+	padding-left: 70px;
 }
