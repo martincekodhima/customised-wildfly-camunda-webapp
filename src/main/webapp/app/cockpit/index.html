@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible"
           content="IE=edge" />
 
-    <title>Horse Cockpit</title>
+    <title>Horse MPMS Cockpit</title>
 
     <meta charset="utf-8" />
     <meta name="viewport"
@@ -63,7 +63,7 @@
          ng-cloak
          sign-out="{{ 'SIGN_OUT_ACTION' | translate }}"
          my-profile="{{ 'MY_PROFILE' | translate }}"
-         brand-name="Cockpit">
+         brand-name=" MPMS Cockpit">
       <ul cam-if-logged-in
           ng-controller="camHeaderViewsCtrl">
         <li ng-repeat="actionProvider in menuActions"
@@ -115,7 +115,7 @@
 
     <!-- footer -->
     <footer cam-widget-footer
-            version="v${project.version}"></footer>
+            version="v7.8.0"></footer>
 
     <script type="application/javascript">
       var cockpitConf = window.camCockpitConf = {};
