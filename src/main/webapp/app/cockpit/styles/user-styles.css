@@ -11,6 +11,15 @@ a:hover, a:focus {
 .nav-tabs>li.active>a,.columns, .column-right,.three-cols-layout .column-left .list-unstyled>.item.active, .three-cols-layout .column-center .list-unstyled>li.active, .three-cols-layout .column-left .list-unstyled>.item:hover, .three-cols-layout .column-center .list-unstyled>li:hover, .three-cols-layout .column-left .list-unstyled>.item:focus, .three-cols-layout .column-center .list-unstyled>li:focus {
 	color: #2e2e2e;
 }
+
+.three-cols-layout .column-left .list-unstyled>.item.active, .three-cols-layout .column-center .list-unstyled>li.active, .three-cols-layout .column-left .list-unstyled>.item.active:hover, .three-cols-layout .column-center .list-unstyled>li.active:hover {
+	color: #15c;
+}
+
+.column .cell.top {
+    border-bottom: 0px;
+}
+
 [cam-widget-header] .navbar-brand {
 	background: url(../assets/images/horse-logo.png);
     background-size: 100px;
@@ -55,5 +64,5 @@ span.brand-name.ng-binding {
 	background-size: 100px;
 	background-repeat: no-repeat;
 	background-position-x: 10px;
-	padding-left: 70px;
+	padding-left: 120px;
 }
