@@ -6,7 +6,7 @@ a {
 	color: #23527c;
 }
 a:hover, a:focus {
-    color: #15c;
+	color: #15c;
 }
 .nav-tabs>li.active>a,.columns, .column-right,.three-cols-layout .column-left .list-unstyled>.item.active, .three-cols-layout .column-center .list-unstyled>li.active, .three-cols-layout .column-left .list-unstyled>.item:hover, .three-cols-layout .column-center .list-unstyled>li:hover, .three-cols-layout .column-left .list-unstyled>.item:focus, .three-cols-layout .column-center .list-unstyled>li:focus {
 	color: #2e2e2e;
@@ -17,16 +17,16 @@ a:hover, a:focus {
 }
 
 .column .cell.top {
-    border-bottom: 0px;
+	border-bottom: 0px;
 }
 
 [cam-widget-header] .navbar-brand {
 	background: url(../assets/images/horse-logo.png);
-    background-size: 100px;
-    background-repeat: no-repeat;
-    margin-left: 10px;
-    background-position: 0 10px;
-    width: 280px;
+	background-size: 100px;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+	background-position: 0 10px;
+	width: 280px;
 }
 [cam-widget-header] .navbar-brand .brand-logo {
 	display: none;
@@ -37,8 +37,8 @@ a:hover, a:focus {
 }
 span.brand-name.ng-binding {
 	width: 200px;
-    display: block;
-    margin-left: 100px
+	display: block;
+	margin-left: 100px
 }
 .column .cell.top {
 	border-bottom: 1px solid #7FE6E9;
@@ -53,9 +53,9 @@ span.brand-name.ng-binding {
 }
 
 .btn-primary:hover {
-    background-color: #62C1C4;
-    border-color: #62C1C4;
-    border-radius: 15px;
+	background-color: #62C1C4;
+	border-color: #62C1C4;
+	border-radius: 15px;
 }
 
 [cam-widget-footer] {
@@ -65,4 +65,8 @@ span.brand-name.ng-binding {
 	background-repeat: no-repeat;
 	background-position-x: 10px;
 	padding-left: 120px;
+}
+
+.three-cols-layout .column-left .list-unstyled>.item.active, .three-cols-layout .column-center .list-unstyled>li.active, .three-cols-layout .column-left .list-unstyled>.item.active:hover, .three-cols-layout .column-center .list-unstyled>li.active:hover {
+	border-color: #15c;
 }

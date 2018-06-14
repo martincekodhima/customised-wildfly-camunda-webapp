@@ -66,3 +66,7 @@ span.brand-name.ng-binding {
     background-position-x: 10px;
     padding-left: 120px;
 }
+
+.three-cols-layout .column-left .list-unstyled>.item.active, .three-cols-layout .column-center .list-unstyled>li.active, .three-cols-layout .column-left .list-unstyled>.item.active:hover, .three-cols-layout .column-center .list-unstyled>li.active:hover {
+    border-color: #15c;
+}
