@@ -19,7 +19,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.camunda.bpm.webapp</groupId>
-			<artifactId>camunda-webapp-jboss</artifactId>
+			<artifactId>camunda-webapp-tomcat</artifactId>
 			<version>${camunda.version}</version>
 			<type>war</type>
 		</dependency>
